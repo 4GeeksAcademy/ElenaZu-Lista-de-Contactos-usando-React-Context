@@ -14,12 +14,12 @@ const ContactList = (props) => {
         <div className='d-flex'>
           <h1>{props.fullName}</h1>
           <Link to={`/contact/update/${props.email}`}>
-          <FontAwesomeIcon icon={faPenToSquare} className="ms-5" onClick={()=> {}}/>
+          <FontAwesomeIcon icon={faPenToSquare} className="ms-5"/>
           </Link>
           <FontAwesomeIcon icon={faTrash} className="ms-5" onClick={() => { actions.deleteContact(props.email) }}/>
         </div>
         <h5>{props.address}</h5>
-        <h5>{props.phoneNumber}</h5>
+        <h5>{props.phone}</h5>
         <h5>{props.email}</h5>
       </div>
     </div>
